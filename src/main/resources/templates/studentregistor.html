@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+			</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+			</script>
+
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="studentregistor.js"></script>
+		<style>
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+			}
+
+			li {
+				float: left;
+			}
+
+			li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+
+			li a:hover {
+				background-color: #111;
+			}
+
+			div {
+				padding-top: 20px;
+				padding-right: 0px;
+				padding-bottom: 30px;
+				padding-left: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>
+			Student Registration HTML Form
+		</h1>
+		<div>
+
+			<ul>
+				<li><a class="active" href="studentregistor.html">Student Registration</a></li>
+				<li><a href="getstudent.html">Display Students</a></li>
+				<li><a href="getstudentbyid.html">Student Search</a></li>
+			</ul>
+		</div>
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<form method='post' id="savestudent">
+				Enter ID : <input type='text' id='id' /><br>
+				Enter Name : <input type='text' id='name' /><br>
+				Enter Age : <input type='text' id='age' /><br>
+				Enter Number : <input type='text' id='num' /><br>
+				Enter Address : <input type='text' id='addr' /><br>
+
+				<input type='submit' value='Submit' />
+			</form>
+		</div>
+		<div class="col-md-4"></div>
+	</body>
+
+</html>
